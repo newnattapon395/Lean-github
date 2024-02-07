@@ -1,4 +1,0 @@
-# Lean-github
-
-
-NAME: NATTAPON CHUMTIM
