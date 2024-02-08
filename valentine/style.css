@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(130, 231, 247);
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    border: 3px solid rgb(255, 255, 255);
+    padding: 6rem 2rem;
+    background-color: plum;
+
+}
+
+.card {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #eee;
+    border-right: 170px solid #ddd;
+    border-bottom: 100px solid #ccc;
+    border-left: 170px solid #ccc;
+
+}
+
+.heart {
+    width: 32px;
+    height: 32px;
+    background-color: #ff3838;
+    transform: translate(-50%, 50%) rotate(45deg);
+    animation: heartbeat 1.4s linear infinite;
+}
+
+.heart::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff3838;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.heart:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff3838;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.break {
+    left: 6%;
+    top: 23%;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1.4);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1.2);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1.4);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+}
+
+.card-btn {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.card-btn a {
+    background-color: aliceblue;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card-btn a:hover {
+    background-color: white;
+    
+}
+
+/* ------------------------------------ */
+@media screen and (max-width:460px) {
+
+    section {
+        width: 100%;
+
+    }
+
+    .container{
+
+    }
+
+    .box {
+        width: 100%;
+        padding: 6rem 2rem;
+    }
+
+    .card {
+        width: 0;
+        height: 0;
+        border-top: 80px solid #eee;
+        border-right: 150px solid #ddd;
+        border-bottom: 80px solid #ccc;
+        border-left: 150px solid #ccc;
+    }
+
+    .heart{
+        width: 2rem;
+        height: 2rem;
+    }
+
+}
