@@ -6,7 +6,7 @@
 
 
 body {
-    background-color: rgb(130, 231, 247);
+    background: linear-gradient(rgb(130, 231, 247),plum);
 }
 
 
@@ -19,9 +19,9 @@ section {
 }
 
 .box {
-    border: 3px solid rgb(255, 255, 255);
+    /* border: 3px solid rgb(255, 255, 255); */
     padding: 6rem 2rem;
-    background-color: plum;
+    /* background-color: plum; */
 
 }
 
@@ -32,8 +32,15 @@ section {
     border-right: 170px solid #ddd;
     border-bottom: 100px solid #ccc;
     border-left: 170px solid #ccc;
+    cursor: pointer;
+    z-index: -1;
 
+    &:hover{
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+        transition: 0.5s;
+    }
 }
+
 
 .heart {
     width: 32px;
@@ -41,6 +48,7 @@ section {
     background-color: #ff3838;
     transform: translate(-50%, 50%) rotate(45deg);
     animation: heartbeat 1.4s linear infinite;
+    box-shadow: 0 0 10px black;
 }
 
 .heart::before {
@@ -53,6 +61,7 @@ section {
     background-color: #ff3838;
     transform: translateY(-50%);
     border-radius: 50%;
+
 }
 
 .heart:after {
@@ -113,7 +122,10 @@ section {
 }
 
 .card-btn a:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.445);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+
+
     
 }
 
