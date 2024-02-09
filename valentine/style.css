@@ -137,15 +137,15 @@ section {
     .card {
         width: 0;
         height: 0;
-        border-top: 80px solid #eee;
-        border-right: 150px solid #ddd;
-        border-bottom: 80px solid #ccc;
-        border-left: 150px solid #ccc;
+        border-top: 70px solid #eee;
+        border-right: 140px solid #ddd;
+        border-bottom: 70px solid #ccc;
+        border-left: 140px solid #ccc;
     }
 
     .heart{
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
 }
