@@ -15,3 +15,15 @@ function createHeart() {
   }
   
   setInterval(createHeart, 300);
+
+// 
+
+$(document).ready(function () {
+	$(".title").click(function () {
+		$(".click-con").addClass("open");
+	});
+
+	$(".close").click(function () {
+		$(".click-con").removeClass("open");
+	});
+});
