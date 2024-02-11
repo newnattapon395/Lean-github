@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@200;400;600&display=swap");
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    animation: blurAnimation 8s ease, moveAnimation 8s ease;}
+    /* animation: blurAnimation 8s ease, moveAnimation 8s ease; */
+}
 
 @keyframes blurAnimation {
     0% {
@@ -35,7 +37,7 @@ body {
 
 .container {
     background-color: #fffffff1;
-    max-width: 960px;
+    max-width: 1100px;
     margin: 0 auto;
     border-radius: 20px;
     /* animation: movego 5s linear infinite; */
@@ -79,7 +81,7 @@ body {
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    padding: 2rem;
+    padding: 4rem;
     /* height: 50rem; */
     margin: 1rem;
 }
@@ -117,7 +119,7 @@ body {
 
     0%,
     100% {
-        transform: translateX(2rem);
+        transform: translateX(-1rem);
     }
 
     50% {
@@ -127,7 +129,7 @@ body {
 
 
 .stack {
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     transition: .25s ease;
 }
@@ -152,7 +154,7 @@ body {
     position: relative;
     transition: .15s ease;
     cursor: pointer;
-    padding: 5% 5% 15% 5%;
+    padding: 5% 5% 3% 5%;
 
     /* z-index: 1; */
     &:before,
@@ -187,7 +189,7 @@ body {
 .image img {
     width: 100%;
     border: 4px solid;
-    aspect-ratio: 1 / 1;
+    /* aspect-ratio: 1 / 1; */
     position: relative;
 
 }
@@ -202,6 +204,45 @@ body {
     }
 }
 
+.grid-col3{
+    width: 100%;
+    grid-column: 3/5;
+    font-family: 'Chonburi', serif;
+    /* border: 2px solid rgb(240, 131, 222); */
+    border-radius: 10px;
+}
+
+.grid-col3 h1{
+    font-size: 2rem;
+    text-shadow: 0 0 5px rgb(240, 131, 222);
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.grid-col3 h1 i:nth-child(1){
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    color: #f50a0a;
+}
+.grid-col3 h1 i:nth-child(2){
+    /* font-size: 1rem; */
+    margin-left: 0.5rem;
+    color: #f50a0a;
+
+}
+
+.grid-col3 p{
+    line-height: 1.7rem;
+}
+
+.grid-col3 h3{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
 /* ------------------------ */
 
 
@@ -212,15 +253,14 @@ body {
 
 
     .container {
-        width: 90%;
+        width: 300px;
         height: 100%;
     }
 
-    .grid-con {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .grid-con{
+        padding: 0.5rem;
     }
+
 
     .grid-col1 img{
         width: 100%;
@@ -228,14 +268,64 @@ body {
 
     .grid-col2{
         width: 100%;
-        margin: 1rem;
-        padding: 2rem;
+        margin: 3rem;
         justify-items: center;
-
     }
 
     .grid-col3 {
-        text-align: center;
+
+    }
+    
+    .grid-col3 h1{
+        padding: 0;
+    }
+
+    .grid-col3 h3{
+        font-size: 1.2rem;
+    }
+
+    .grid-col3 p{
+        font-size: 0.9rem;
+
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .container{
+        height: 100%;
+        width: 80%;
+    }
+
+    .grid-con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .grid-col2{
+        width: 100%;
+        margin: 1rem;
+        justify-items: center;
+    }
+
+    .grid-col3{
+        /* padding: 2rem; */
+    }
+
+    .grid-col3 h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .grid-col3 p{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .grid-col3 h3{
+        font-size: 1.3rem;
     }
 
 
