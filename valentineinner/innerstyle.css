@@ -100,7 +100,7 @@ body {
     /* width: 70%;  */
     height: auto;
     width: 300px;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     
 
 }
@@ -259,11 +259,13 @@ body {
 
     .grid-con{
         padding: 0.5rem;
+        padding: 1rem;
+
     }
 
 
     .grid-col1 img{
-        width: 100%;
+        width: 70%;
     }
 
     .grid-col2{
